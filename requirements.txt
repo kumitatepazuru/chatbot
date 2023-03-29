@@ -1,1 +1,7 @@
-discord.py
+SpeechRecognition
+fastapi~=0.95.0
+uvicorn
+openai
+python-multipart
+https://github.com/VOICEVOX/voicevox_core/releases/download/0.14.1/voicevox_core-0.14.1+cpu-cp38-abi3-linux_x86_64.whl
+onnxruntime
