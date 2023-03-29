@@ -1,3 +1,4 @@
+import os
 import openai
 from voicevox_core import VoicevoxCore
 
@@ -8,7 +9,7 @@ import speech_recognition as sr
 app = FastAPI()
 r = sr.Recognizer()
 SPEAKER_ID = 3
-openai.api_key = "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"
+openai.api_key = os.getenv('OPENAI_API_KEY')
 text_list = [{"role": "system", "content": "Your name is ずんだもん. Please answer the question in 100 characters or less "
                                            "in Japanese."}]
 
